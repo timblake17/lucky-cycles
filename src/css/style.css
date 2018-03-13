@@ -473,8 +473,6 @@ input[type=submit] {
   text-transform: uppercase;
   background: none;
   border: 1px solid #000;
-  width: 25%;
-  margin: 0 auto;
   font-weight: 600;
   font-size: 1.5rem;
   font-family: 'Open Sans';
@@ -486,12 +484,19 @@ input[type=submit] {
 button[disabled],
 input[type=submit][disabled] {
   color: #d12028;
-  width: 25%;
-  margin: 0 auto;
   background: #fff;
   border-color: #d12028;
   -webkit-transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
           transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
+}
+
+@media only screen and (max-width: 1024px){
+  button,
+  input[type=submit],button[disabled],
+  input[type=submit][disabled]{
+    width: 25%;
+    margin: 0 auto;
+  }
 }
 button[disabled]:hover,
 input[type=submit][disabled]:hover {
