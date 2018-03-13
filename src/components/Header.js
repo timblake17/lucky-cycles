@@ -7,8 +7,6 @@ const Header = (props) => {
       <h1>
         Lucky
         <span className="ofThe">
-          <span className="of">of</span>
-          <span className="the">the</span>
         </span>
         Cycles
       </h1>
